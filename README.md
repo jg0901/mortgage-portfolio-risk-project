@@ -46,6 +46,6 @@ The analysis was conducted using Excel Pivot Tables, Pivot Charts, Slicers, and 
 
 ## Data Quality Considerations
 
-* Missing LTV and DTI values exhibited unusually high default rates.
-* Credit score bands showed minimal differentiation in default rates.
-* Findings suggest potential target leakage or synthetic data characteristics.
+* Missing LTV and DTI values exhibited unusually high default rates and were excluded from risk rankings.
+* Credit score bands showed minimal differentiation in default rates, which is inconsistent with typical lending portfolios.
+* These patterns suggest potential data quality issues, synthetic data characteristics, or target leakage that should be considered when interpreting results.
