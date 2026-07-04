@@ -22,12 +22,12 @@ Mortgage lenders need to understand:
 - Target Variable: Loan Status (Defaulted / Non-Defaulted)
 
   Variables:
-• Borrower demographics
-• Income
-• Credit characteristics
-• Property characteristics
-• Loan structure
-• Loan purpose
+* Borrower demographics
+* Income
+* Credit characteristics
+* Property characteristics
+* Loan structure
+* Loan purpose
 
 ## Project Workflow
 Raw Data
