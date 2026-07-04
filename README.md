@@ -2,9 +2,17 @@
 
 ## Project Overview
 
-This project analyzes a mortgage loan portfolio containing 148,670 loans to identify borrower, loan, and property characteristics associated with elevated default risk.
+Analyze a mortgage loan portfolio of 148,670 loans to identify borrower, loan, and property characteristics associated with elevated default risk while assessing data quality issues that may affect interpretation.
 
-The analysis was conducted using Excel Pivot Tables, Pivot Charts, Slicers, and an interactive dashboard.
+The project combines data cleaning, exploratory data analysis (EDA), and interactive dashboarding to support portfolio risk assessment.
+  
+## Business Problem
+
+Mortgage lenders need to understand:
+1. Which borrower characteristics are associated with higher default risk?
+2. Which loan products contribute most to portfolio risk?
+3. Which portfolio segments require closer monitoring?
+4. Are there data quality issues that could affect risk analysis?
 
 ## Dataset Overview
 
@@ -12,40 +20,50 @@ The analysis was conducted using Excel Pivot Tables, Pivot Charts, Slicers, and 
 - Total Loan Amount: $49.2B
 - Variables: Borrower, Property, Credit Risk, Loan Structure
 - Target Variable: Loan Status (Defaulted / Non-Defaulted)
-  
-## Business Questions
 
-1. What is the overall risk profile of the mortgage portfolio?
-2. Which borrower segments exhibit the highest default rates?
-3. Which loan products are associated with elevated default risk?
-4. Do business/commercial loans exhibit higher default rates than personal loans?
-5. Which loan structure features are associated with elevated risk?
-6. What are the highest-risk segments that should be prioritized for monitoring?
+  Variables:
+• Borrower demographics
+• Income
+• Credit characteristics
+• Property characteristics
+• Loan structure
+• Loan purpose
+
+##Project Workflow
+Raw Data
+      ↓
+Data Cleaning
+      ↓
+Exploratory Data Analysis
+      ↓
+Missing Value Assessment
+      ↓
+Dashboard Development
+      ↓
+Business Insights
+
 ## Dashboard
 
 ![Dashboard](Dashboard_preview.png)
 
-## Key Findings
+## Missing Value Assessment
 
-* The portfolio contains 148,670 loans with a total loan amount of $49.2B.
-* 36,639 loans were classified as defaulted, resulting in a 24.64% default rate.
-* The total amount associated with defaulted loans is approximately $11.7B.
-* **Lowest Income Quartile (Q1)** exhibited the highest default rate (35.51%).
-* **Type 2 loans** showed higher default rates than Type 1 and Type 3 loans.
-* **Business/Commercial loans** exhibited higher default rates than personal loans.
-* **Lump Sum Payment loans** exhibited the highest default rate (77.66%).
-* **Negative Amortization loans** exhibited elevated default risk (44.60%).
+![Missing Value Assessment](Missingness Assessment_preview.png)
 
-## Tools Used
+Missing-value analysis revealed that several variables exhibited highly non-random missingness strongly associated with default (67–100%), suggesting potential target leakage or post-origination recording. Variables affected by these patterns were excluded from comparative risk rankings.
 
-* Microsoft Excel
-* Pivot Tables
-* Pivot Charts
-* Slicers
-* Conditional Formatting
+## Executive Summary
+
+* Portfolio default rate is **24.64%**, representing approximately **$11.7B** in defaulted loan amount.
+* Loan structure is one of the strongest differentiators of default risk, with **Lump Sum Payment Required (77.66%)** and **Negative Amortization (44.60%)** exhibiting the highest default rates.
+* Borrowers in the lowest income quartile demonstrate substantially **higher default risk** than higher-income groups.
+* **Business/Commercial loans** consistently outperform Personal loans in default rate.
+* Missingness analysis identified several variables exhibiting strong evidence of target leakage or post-origination recording.
+
 
 ## Data Quality Considerations
 
-* Missing LTV and DTI values exhibited unusually high default rates and were excluded from risk rankings.
-* Credit score bands showed minimal differentiation in default rates, which is inconsistent with typical lending portfolios.
-* These patterns suggest potential data quality issues, synthetic data characteristics, or target leakage that should be considered when interpreting results.
+* Missing-value analysis identified multiple variables (Interest Rate, Interest Rate Spread, Property Value, LTV, and Upfront Charges) exhibiting highly non-random missingness strongly associated with default (92–100%). These patterns suggest potential target leakage or post-origination recording, and these variables should be interpreted cautiously in comparative risk analysis.
+* Credit score bands exhibit relatively weak separation compared with typical mortgage portfolios.
+* Income lacks documentation regarding reporting units, limiting interpretation.
+* Thirty-three observations contained LTV values exceeding 100%. Their impact on portfolio-level results was identified as an area for future investigation.
