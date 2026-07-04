@@ -29,7 +29,7 @@ Mortgage lenders need to understand:
 • Loan structure
 • Loan purpose
 
-##Project Workflow
+## Project Workflow
 Raw Data
       ↓
 Data Cleaning
@@ -48,7 +48,7 @@ Business Insights
 
 ## Missing Value Assessment
 
-![Missing Value Assessment](Missingness Assessment_preview.png)
+![Missing Value Assessment](Missingness_Assessment_preview.png)
 
 Missing-value analysis revealed that several variables exhibited highly non-random missingness strongly associated with default (67–100%), suggesting potential target leakage or post-origination recording. Variables affected by these patterns were excluded from comparative risk rankings.
 
