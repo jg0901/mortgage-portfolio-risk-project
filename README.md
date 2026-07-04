@@ -30,17 +30,15 @@ Mortgage lenders need to understand:
 * Loan purpose
 
 ## Project Workflow
-Raw Data
-      ↓
-Data Cleaning
-      ↓
-Exploratory Data Analysis
-      ↓
-Missing Value Assessment
-      ↓
-Dashboard Development
-      ↓
-Business Insights
+
+| Step | Description |
+|------|-------------|
+| 1 | Raw Data |
+| 2 | Data Cleaning |
+| 3 | Exploratory Data Analysis |
+| 4 | Missing Value Assessment |
+| 5 | Dashboard Development |
+| 6 | Business Insights & Recommendations |
 
 ## Dashboard
 
