@@ -16,11 +16,10 @@ Mortgage lenders need to understand:
 
 ## Dataset Overview
 
-- Total Loans: 148,670
-- Total Loan Amount: $49.2B
-- Default Rate: 24.64%
+- **Total Loans:** 148,670
+- **Total Loan Amount:** $49.2B
+- **Default Rate:** 24.64%
 - Target Variable: Loan Status (Defaulted / Non-Defaulted)
-
   Variables:
 * Borrower demographics
 * Income
