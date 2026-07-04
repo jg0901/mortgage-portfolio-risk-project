@@ -36,9 +36,10 @@ Mortgage lenders need to understand:
 | 1 | Raw Data |
 | 2 | Data Cleaning |
 | 3 | Exploratory Data Analysis |
-| 4 | Missing Value Assessment |
-| 5 | Dashboard Development |
-| 6 | Business Insights & Recommendations |
+| 4 | Risk Segmentation |
+| 5 | Missing Value Assessment |
+| 6 | Dashboard Development |
+| 7 | Business Insights & Recommendations |
 
 ## Dashboard
 
