@@ -1,4 +1,4 @@
-# Mortgage Portfolio Risk Dashboard
+# Mortgage Portfolio Risk Assessment
 
 ## Project Overview
 
@@ -64,4 +64,10 @@ Missing-value analysis revealed that several variables exhibited highly non-rand
 * Missing-value analysis identified multiple variables (Interest Rate, Interest Rate Spread, Property Value, LTV, and Upfront Charges) exhibiting highly non-random missingness strongly associated with default (92–100%). These patterns suggest potential target leakage or post-origination recording, and these variables should be interpreted cautiously in comparative risk analysis.
 * Credit score bands exhibit relatively weak separation compared with typical mortgage portfolios.
 * Income lacks documentation regarding reporting units, limiting interpretation.
-* Thirty-three observations contained LTV values exceeding 100%. Their impact on portfolio-level results was identified as an area for future investigation.
+
+## Business Recommendations
+
+* Prioritize monitoring of Lump Sum Payment and Negative Amortization loans.
+* Strengthen underwriting review for high-DTI borrowers.
+* Investigate variables exhibiting target leakage before model development.
+* Validate data quality before using this dataset for production risk assessment.
