@@ -18,7 +18,7 @@ Mortgage lenders need to understand:
 
 - Total Loans: 148,670
 - Total Loan Amount: $49.2B
-- Variables: Borrower, Property, Credit Risk, Loan Structure
+- Default Rate: 24.64%
 - Target Variable: Loan Status (Defaulted / Non-Defaulted)
 
   Variables:
