@@ -7,8 +7,9 @@ Analyze a mortgage loan portfolio of 148,670 loans to identify borrower, loan, a
 The project combines data cleaning, exploratory data analysis (EDA), and interactive dashboarding to support portfolio risk assessment.
   
 ## Business Problem
+The lending institution is experiencing a default rate of 24.64% across its $49.2B mortgage portfolio, representing $11.7B in defaulted loan balances. Leadership does not currently know which borrower, loan, and property characteristics are most associated with this risk, making it difficult to adjust underwriting criteria, pricing, or capital reserves to reduce future losses. This project analyzes the portfolio to identify the segments and loan structures driving default risk, so the risk and underwriting teams can prioritize where to tighten lending standards.
 
-Mortgage lenders need to understand:
+## Analytic Questions
 1. Which borrower characteristics are associated with higher default risk?
 2. Which loan products contribute most to portfolio risk?
 3. Which portfolio segments require closer monitoring?
